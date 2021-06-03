@@ -28,6 +28,14 @@ func Test_bin(t *testing.T) {
 			},
 			want: 4,
 		},
+		{
+			name: "3",
+			args: args{
+				arr: []int{1, 3, 5, 7, 9},
+				val: 10,
+			},
+			want: -1,
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
