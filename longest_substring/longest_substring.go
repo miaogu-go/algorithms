@@ -21,7 +21,7 @@ func substringLen(s string) int {
 
 	for right < len(s) {
 		c, ok := hash[s[right]] //在map里查询是否存在字符
-		if ok {                 //出现重复字符
+		if ok && c >= left {    //出现重复字符，重复字符的位置要大于左边的窗口
 			left = c + 1 //移动左边下标到重复字符位置的后一位，让left、right之间没有重复字符
 		}
 		hash[s[right]] = right
