@@ -1,6 +1,6 @@
 package longest_substring
 
-func substringLen(s string) int {
+/*func substringLen(s string) int {
 	windowElem := make(map[byte]int, len(s))
 	left, right, ans := 0, 0, 0
 	for left < len(s) {
@@ -12,6 +12,24 @@ func substringLen(s string) int {
 		ans = max(ans, left-right)
 	}
 	return ans
+}*/
+
+//substringLen 最长字符子串，滑动窗口解法
+func substringLen(s string) int {
+	left, right, leng := 0, 0, 0
+	hash := make(map[uint8]int) //保存字符与字符位置的map，位置使用下标
+
+	for right < len(s) {
+		c, ok := hash[s[right]] //在map里查询是否存在字符
+		if ok {                 //出现重复字符
+			left = c + 1 //移动左边下标到重复字符位置的后一位，让left、right之间没有重复字符
+		}
+		hash[s[right]] = right
+		right++
+		leng = max(leng, right-left)
+	}
+
+	return leng
 }
 
 func max(x, y int) int {
