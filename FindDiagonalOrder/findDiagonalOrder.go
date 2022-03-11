@@ -22,7 +22,7 @@ func findDiagonalOrder(mat [][]int) []int {
 		}
 
 		//遍历对角线
-		for r < m && c > -1 && r < n {
+		for r < n && c > -1 {
 			tmp = append(tmp, mat[r][c])
 			r++
 			c--
