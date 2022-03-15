@@ -28,3 +28,23 @@ func TwoSum(arr []int, target int) []int {
 	}
 	return nil
 }
+
+//twoSum 两数之和 II - 输入有序数组
+//https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/
+func twoSum(numbers []int, target int) []int {
+	startIndex := 0
+	endIndex := len(numbers) - 1
+	for startIndex < endIndex {
+		sum := numbers[startIndex] + numbers[endIndex]
+		if sum == target {
+			return []int{startIndex + 1, endIndex + 1}
+		}
+		if sum < target {
+			startIndex++
+		} else {
+			endIndex--
+		}
+	}
+
+	return []int{-1, -1}
+}
