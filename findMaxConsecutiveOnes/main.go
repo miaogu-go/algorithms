@@ -12,6 +12,7 @@ func main() {
 }
 
 //findMaxConsecutiveOnes 最大连续1的个数
+//https://leetcode-cn.com/problems/max-consecutive-ones/
 func findMaxConsecutiveOnes(nums []int) int {
 	oneLen := 0
 	max := 0
