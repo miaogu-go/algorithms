@@ -5,6 +5,9 @@ import (
 	"strings"
 )
 
+//IP 地址无效化
+//https://leetcode.cn/problems/defanging-an-ip-address/
+
 func main() {
 	res := defangIPaddr("1.1.1.1")
 	fmt.Println(res)

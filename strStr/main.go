@@ -4,6 +4,8 @@ import (
 	"fmt"
 )
 
+//实现 strStr()
+//https://leetcode.cn/problems/implement-strstr/
 func main() {
 
 	pos := StrStr2("aaaaa", "bba")

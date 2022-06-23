@@ -21,6 +21,8 @@ answer[i] == i （以字符串形式）如果上述条件全不满足。
 输入：n = 15
 输出：["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz"]*/
 
+//Fizz Buzz
+//https://leetcode.cn/problems/fizz-buzz/
 func main() {
 	s := fizzBuzz(3)
 	fmt.Println(s)

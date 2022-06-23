@@ -14,6 +14,7 @@ package longest_substring
 	return ans
 }*/
 
+//https://leetcode.cn/problems/longest-substring-without-repeating-characters/
 //substringLen 最长字符子串，滑动窗口解法
 func substringLen(s string) int {
 	left, right, leng := 0, 0, 0

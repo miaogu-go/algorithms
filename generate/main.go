@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+//杨辉三角
 //https://leetcode.cn/problems/pascals-triangle/
 
 func main() {
