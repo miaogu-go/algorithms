@@ -20,3 +20,5 @@
 18. [反转字符串中的单词 III](https://github.com/miaogu-go/algorithms/tree/master/reverseWords3)
 19. [在每个树行中找最大值](https://github.com/miaogu-go/algorithms/tree/master/largestValues)
 20. [寻找旋转排序数组中的最小值](https://github.com/miaogu-go/algorithms/tree/master/findMin)
+20. [移动零](https://github.com/miaogu-go/algorithms/tree/master/moveZeroes)
+20. [质数排列](https://github.com/miaogu-go/algorithms/tree/master/numPrimeArrangements)
